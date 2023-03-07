@@ -1,0 +1,173 @@
+:root {
+    --imgSrc: url("https://rickandmortyapi.com/api/character/avatar/2.jpeg");
+}
+
+html {
+    display: flex;
+    flex-flow: column;
+    background-color: #aec1d1;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+/* body containers */
+.flex-container-main {
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    width: auto;
+    padding: 15px;
+    margin: 15px;
+    color: black;
+    background-color: beige;
+    border-radius: 15px;
+    border-color: #000000;
+    box-shadow: 10px 5px 5px rgb(81, 81, 81);;
+}
+
+.flex-main-content {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    margin: 15px;
+    color: black;
+    border-color: #000000;
+}
+
+.container-header {
+    height: auto;
+    font-size: 20px;
+    width: 90%;
+    padding: 15px;
+    margin: 15px;
+}
+
+.footer-class {
+    width: 100%;
+    background: beige;
+    position: absolute;
+    left: 0;
+    text-align: center;
+}
+
+/* grid templates */
+.grid-template {
+    background-color:#282929;
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "morty1 morty2 morty3"
+        "morty4 morty5 morty6";
+}
+
+.morty-container {
+    padding: 16px;
+    color: white;
+    display: grid;
+    box-sizing: content-box;
+    width: 95%;
+    grid-template-columns: 40% 60%;
+}
+
+.morty1 {
+    grid-area: morty1;
+}
+
+.morty2 {
+    grid-area: morty2;
+}
+
+.morty3 {
+    grid-area: morty3;
+}
+
+.morty4 {
+    grid-area: morty4;
+}
+
+.morty5 {
+    grid-area: morty5;
+}
+
+.morty6 {
+    grid-area: morty6;
+}
+
+/* content styles */
+.img-Morty {
+    border-radius: 15px 0px 0px 15px;
+    background-size: cover;
+    background-image: var(--imgSrc);
+}
+
+.text-morty {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #404040;
+}
+
+.row-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.margin-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.live-status {
+    display: flex;
+    width: 1px;
+    height: 1px;
+    padding:1px;
+    border: solid;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.red {
+    border-color: red;
+    background-color: red;
+}
+
+.green {
+    border-color: green;
+    background-color: green;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.padding-top-xs {
+    padding-top: 16px;
+    margin: 0;
+}
+
+.padding-bot-xs {
+    padding-bottom: 16px;
+    margin: 0;
+}
+
+.menu-font {
+    font: menu;
+}
